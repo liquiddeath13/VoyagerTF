@@ -1,5 +1,4 @@
 # VoyagerTF
-Fortnite LOLTF External Hypervisor Edition, Open Source
 
 
 External LOLTF with modded voyager connected.
