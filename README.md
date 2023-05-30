@@ -5,9 +5,7 @@ External LOLTF with modded voyager connected.
 
 This is an open source project, pull requests are welcome.
 
-https://github.com/xblyscyk/modded-pasteager
-
-^ use it for this shit to work, just compile and run loaderuefi
+use modded pasteager for this shit to work
 
 
 To be done:
