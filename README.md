@@ -5,8 +5,7 @@ External LOLTF with modded voyager connected.
 
 This is an open source project, pull requests are welcome.
 
-use modded pasteager for this shit to work
-
+use modded pasteager for this shit to work (thanks chase)
 
 To be done:
 
