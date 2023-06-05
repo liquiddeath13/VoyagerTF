@@ -24,4 +24,12 @@ Known Issues related to pasteager:
 - Wont work on WIN 11 / win 10 below 2004 due to signatures, but can be easily updated
 
 
+Possible Detection Vectors:
+
+- vmexit_key
+- mouse_event
+- CreateWindow
+- the shit source itself
+
+
 anyways enjoy and dont sell this shit lol, but if u do atleast change aimbot from mouse_event to anything else.
