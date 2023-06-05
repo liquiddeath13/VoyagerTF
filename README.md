@@ -29,4 +29,4 @@ To be done:
 - Add spoofcalls or anything because this is UltraDetected
 
 
-anyways enjoy and dont sell this shit lol.
+anyways enjoy and dont sell this shit lol, but if u do atleast change aimbot from mouse_event to anything else.
