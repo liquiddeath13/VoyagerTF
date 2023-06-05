@@ -2,8 +2,8 @@
 
 External LOLTF with modded voyager connected.
 
-"UNDETECTED" in P2C terms (once u change the aimbot method of course)
-While its "UNDETECTED" the drawback is the absolutely shit compatibility, but once u get around with that, its great.
+- "UNDETECTED" in P2C terms (once u change the aimbot method of course)
+- While its "UNDETECTED" the drawback is the absolutely shit compatibility, but once u get around with that, its great.
 
 use modded pasteager for this shit to work (thanks chase)
 
