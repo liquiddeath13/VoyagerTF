@@ -6,6 +6,7 @@ Requirements:
 - Secure Boot OFF
 - Virtualization (AMD SVM/Intel VT-x) ON
 - Windows 10 2004-22h2
+
 Known Issues related to pasteager:
 
 - Confirmed not working on win 10 revisions .2965 / .2913 (idk about others) Works on INTEL/AMD 19044.2006 [21H2] perfectly (REMEMBER TO CHANGE OFFSETS IN TYPES.H FOR AMD!!)
