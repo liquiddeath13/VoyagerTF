@@ -6,6 +6,7 @@ Known Issues related to pasteager:
 - Confirmed not working on win 10 revisions .2965 / .2913 (idk about others) Works on INTEL/AMD 19044.2006 [21H2] perfectly (REMEMBER TO CHANGE OFFSETS IN TYPES.H FOR AMD!!)
 - EAC blocks memory reading on AMD (also happens on some intel machines) Works well on battleye.
 - Battleye might sometimes give u an error related to virtual machine, happened to one of my users. Doesnt happen to me though.
+- Wont work on WIN 11 / win 10 below 2004 due to signatures, but can be easily updated
 
 
 External LOLTF with modded voyager connected.
