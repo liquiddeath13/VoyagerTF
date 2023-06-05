@@ -6,6 +6,7 @@ Requirements:
 - Secure Boot OFF
 - Virtualization (AMD SVM/Intel VT-x) ON
 - Windows 10 2004-22h2
+- Hyper-V Enabled (pasteager should auto enable it)
 
 Known Issues related to pasteager:
 
