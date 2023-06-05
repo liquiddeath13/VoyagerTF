@@ -4,7 +4,7 @@ External LOLTF with modded voyager connected.
 
 Ideal for ur new "UD" Private Softaim P2C.
 
-- "UNDETECTED" in P2C terms (once u change the aimbot method of course)
+- "UNDETECTED" in P2C terms (once u change the aimbot method of course, also common um detections)
 - While its "UNDETECTED" the drawback is the absolutely shit compatibility, but once u get around with that, its great.
 
 use modded pasteager for this shit to work (thanks chase)
