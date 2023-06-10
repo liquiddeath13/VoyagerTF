@@ -10,9 +10,6 @@ TODO every update:
 - update uworld
 - maybe bonearray if it changes and teamindex
 
-- "UNDETECTED" in P2C terms (once u change the aimbot method of course, also common um detections)
-- While its "UNDETECTED" the drawback is the absolutely shit compatibility, but once u get around with that, its great.
-
 use modded pasteager for this shit to work (thanks chase)
 
 Requirements:
