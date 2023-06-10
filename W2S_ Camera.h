@@ -47,35 +47,35 @@ _MATRIX Matrix(Vector3 Vec4, Vector3 origin = Vector3(0, 0, 0))
 	return matrix;
 }
 
-struct Camera
+struct CamewaDescwipsion
 {
-	float FieldOfView;
-	Vector3 Rotation;
 	Vector3 Location;
+	Vector3 Rotation;
+	float FieldOfView;
+	char Useless[0x18];
 };
-
-Camera GetCamera(__int64 a1)
+CamewaDescwipsion GetViewPoint()
 {
-	Camera LocalCamera;
-	__int64 v1;
-	v1 = Memory.Read<__int64>(Localplayer + 0xd0);
-	__int64 v9 = Memory.Read<__int64>(v1 + 0x8); // 0x10
-	LocalCamera.FieldOfView = 80.f / (Memory.Read<double>(v9 + 0x7F0) / 1.19f); // 0x600
-	LocalCamera.Rotation.x = Memory.Read<double>(v9 + 0x9C0);
-	LocalCamera.Rotation.y = Memory.Read<double>(a1 + 0x148);
-	uint64_t FGC_Pointerloc = Memory.Read<uint64_t>(Uworld + 0x110);
-	LocalCamera.Location = Memory.Read<Vector3>(FGC_Pointerloc);
-	return LocalCamera;
-}
+	char v1; // r8
+	CamewaDescwipsion ViewPoint = Memory.Read<CamewaDescwipsion>(Memory.BaseAddress + 0xf0d7a50);
+	BYTE* v2 = (BYTE*)&ViewPoint;
+	int i; // edx
+	__int64 result; // rax
 
+	v1 = 0x40;
+	for (i = 0; i < 0x40; ++i)
+	{
+		*v2 ^= v1;
+		result = (unsigned int)(i + 0x17);
+		v1 += i + 0x17;
+		v2++;
+	}
+
+	return ViewPoint;
+}
 Vector3 ProjectWorldToScreen(Vector3 WorldLocation)
 {
-	Camera vCamera = GetCamera(Rootcomp);
-	vCamera.Rotation.x = (asin(vCamera.Rotation.x)) * (180.0 / M_PI);
-	//Rotation.x: 0.870931
-	//Rotation.y: -88.0719
-	//std::cout << "Rotation.x: " << vCamera.Rotation.x << std::endl;
-	//std::cout << "Rotation.y: " << vCamera.Rotation.y << std::endl;
+	CamewaDescwipsion vCamera = GetViewPoint();
 	_MATRIX tempMatrix = Matrix(vCamera.Rotation, Vector3(0, 0, 0));
 	Vector3 vAxisX = Vector3(tempMatrix.m[0][0], tempMatrix.m[0][1], tempMatrix.m[0][2]);
 	Vector3 vAxisY = Vector3(tempMatrix.m[1][0], tempMatrix.m[1][1], tempMatrix.m[1][2]);
