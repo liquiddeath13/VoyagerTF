@@ -2,6 +2,14 @@
 
 External LOLTF with modded voyager connected.
 
+updated to the latest patch 25.00
+
+TODO every update:
+
+- update viewpoint
+- update uworld
+- maybe bonearray if it changes and teamindex
+
 - "UNDETECTED" in P2C terms (once u change the aimbot method of course, also common um detections)
 - While its "UNDETECTED" the drawback is the absolutely shit compatibility, but once u get around with that, its great.
 
