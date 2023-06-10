@@ -23,7 +23,7 @@
 
 #include "fnv.h"
 
-#include <C:\Users\admin\Desktop\fuckknight\d3dx9.h>
+#include <d3dx9.h>
 #include <d3d9.h>
 #include <DirectXMath.h>
 
