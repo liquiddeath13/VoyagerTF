@@ -1,7 +1,4 @@
-// Source made by Create#5488
-// Release Date: 02.02.2023 
-// Updated to Latest Patch
-// If you need help dm me -> Create#5488
+
 #include "MainIncludes.h"
 #include <tchar.h>
 #include "lazyimp.hpp"
