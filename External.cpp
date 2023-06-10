@@ -1,4 +1,4 @@
-﻿// Source made by Create#5488
+// Source made by Create#5488
 // Release Date: 02.02.2023 
 // Updated to Latest Patch
 // If you need help dm me -> Create#5488
@@ -66,13 +66,12 @@ int main()
 	xShutdown();
 }
 
-auto isVisible(uintptr_t test) -> bool
+bool isVisible(uint64_t Mesh)
 {
-	float fLastSubmitTime = Memory.Read<float>(OFFSETS::Mesh + OFFSETS::fLastSubmitTime);
-	float fLastRenderTimeOnScreen = Memory.Read<float>(OFFSETS::Mesh + OFFSETS::fLastRenderTimeOnScreen);
-	const float fVisionTick = 0.06f;
-	bool bVisible = fLastRenderTimeOnScreen + fVisionTick >= fLastSubmitTime;
-	return bVisible;
+	auto fLastSubmitTime = Memory.Read<float>(Mesh + 0x360);
+	auto fLastRenderTimeOnScreen = Memory.Read<float>(Mesh + 0x368);
+	const float fVisionTick = 0.15f;
+	return fLastRenderTimeOnScreen + fVisionTick >= fLastSubmitTime;
 }
 
 void AimAt(DWORD_PTR entity)
@@ -145,10 +144,6 @@ void DrawESP() {
 
 	DWORD_PTR Gameinstance = Memory.Read<DWORD_PTR>(Uworld + OFFSETS::Gameinstance);
 
-	if (!Uworld) {
-
-		std::cout << "NO UWORLD EAC ISSUE" << '\n';
-	}
 
 	DWORD_PTR LocalPlayers = Memory.Read<DWORD_PTR>(Gameinstance + OFFSETS::LocalPlayers);
 
@@ -647,6 +642,9 @@ void render() {
 			ImGui::SetNextItemWidth(250.000f);
 			ImGui::SetCursorPos(ImVec2(143.000f, 96.000f));
 			ImGui::SliderFloat(skCrypt("Smooth"), &Smoothness, 2.000f, 50.000f);
+
+			ImGui::SetCursorPos(ImVec2(143.000f, 119.000f));
+			ImGui::SliderInt(skCrypt("Esp Distance"), &def::VisDist, 50, 300);
 
 
 			ImGui::SetNextItemWidth(250.000f);
