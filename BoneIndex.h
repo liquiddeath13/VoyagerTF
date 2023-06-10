@@ -3,11 +3,11 @@
 FTransform GetBoneIndex(DWORD_PTR mesh, int index)
 {
 	DWORD_PTR bonearray;
-	bonearray = Memory.Read<DWORD_PTR>(mesh + 0x5f0);
+	bonearray = Memory.Read<DWORD_PTR>(mesh + 0x600);
 
 	if (bonearray == NULL)
 	{
-		bonearray = Memory.Read<DWORD_PTR>(mesh + 0x5f0 + 0x10);
+		bonearray = Memory.Read<DWORD_PTR>(mesh + 0x600 + 0x10);
 	}
 	return Memory.Read<FTransform>(bonearray + (index * 0x60));
 }
