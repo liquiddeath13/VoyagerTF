@@ -57,7 +57,7 @@ struct CamewaDescwipsion
 CamewaDescwipsion GetViewPoint()
 {
 	char v1; // r8
-	CamewaDescwipsion ViewPoint = Memory.Read<CamewaDescwipsion>(Memory.BaseAddress + 0xf0d7a50);
+	CamewaDescwipsion ViewPoint = Memory.Read<CamewaDescwipsion>(Memory.BaseAddress + 0xF0E8BD0);
 	BYTE* v2 = (BYTE*)&ViewPoint;
 	int i; // edx
 	__int64 result; // rax
