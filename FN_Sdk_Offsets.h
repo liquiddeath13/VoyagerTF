@@ -1,7 +1,7 @@
 #pragma once
 #include <Windows.h>
 
-#define GWorld 0xF1ADD68 // gworld is a pointer of uworld. 
+#define GWorld 0xF1BEEE8 // gworld is a pointer of uworld. 
 
 namespace OFFSETS
 {
